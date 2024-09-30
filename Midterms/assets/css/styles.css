@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+         url('assets/fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+         url('assets/fonts/poppins/Poppins-Regular.woff') format('woff'),
+         url('assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+         url('assets/fonts/poppins/Poppins-Bold.woff') format('woff'),
+         url('assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0 50px;
+  }
+  
+  /* Fixed Navbar Styling */
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    padding: 1rem;
+    width: 89%;  /* Adjusts the width */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;  /* Centers it */
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    border-bottom: 1px solid #31241e; /* Line below navbar */
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+  /* Adjust Logo Size */
+  .navbar-brand img {
+    width: 50px; /* Adjust the width here */
+    height: auto; /* Keeps aspect ratio */
+  }
+  
+  .nav-link {
+    color: #31241e;
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #86654b; /* Change to your preferred active color */
+  }
+  
+  
+  .logo-text {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    background-image: url('../images/home1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #000;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-top: 6em;
+  }
+  
+  .text-muted, .course-text, .about-text, .text-center, .contact-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Info Section Styling */
+  .info-text {
+    text-align: left;
+  }
+  
+  .info-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn-warning {
+    background-color: #e1d5c9;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+  
+  .btn-warning:hover {
+    background-color: #cbb7a6;
+  }
+  
+  /* Adjusted Navbar Link Styling */
+  .nav-link {
+    color: #31241e;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #86654b;
+  }
+  
+  /* CSS for image adjustment */
+  .img-fluid {
+    width: 100%; /* Make the image fill the width of the container */
+    height: 600px; /* Set a fixed height to force the image size */
+    object-fit: cover; /* Crops the image to fit within the container */
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 img {
+        margin-bottom: 20px;
+        height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  /* Style for resizing and cropping the images */
+  .img-fluid-about {
+    width: 100%; /* Ensures the image fills its container */
+    height: 350px; /* Set a fixed height for the images */
+    object-fit: cover; /* Crops the image to fit within the container */
+  }
+  
+  /* Adjust the image height for smaller screens */
+  @media (max-width: 768px) {
+    .img-fluid {
+        height: 250px; /* Set a smaller height for mobile devices */
+    }
+  }
+  
+  .shop-img {
+    width: 100%; /* Ensures the image fills the card container */
+    height: 250px; /* Set a fixed height for the images */
+    object-fit: cover; /* Crops the image to fit within the container */
+    border-radius: 5px 5px 0 0; /* Optional: Rounds the top corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for a subtle 3D effect */
+  }
+  
+  /* Adjust the image height for smaller screens */
+  @media (max-width: 768px) {
+    .shop-img {
+        height: 200px; /* Set a smaller height for mobile devices */
+    }
+  }
+  
+  .card-title{
+    font-weight: bold;
+  }
+  .btn-primary, .btn-dark {
+    background-color: #e1d5c9;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+  }
+  
+  .btn-primary, .btn-dark:hover {
+    background-color: #cbb7a6;
+  }
+  
+  .contact-form {
+    padding: 40px;
+    border-radius: 8px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #d1c8c1;
+  }
